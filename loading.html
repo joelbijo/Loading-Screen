@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Screen</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+    }
+    .loading {
+      text-align: center;
+      font-family: monospace;
+      font-size: larger;
+      max-width: 50%;
+    }
+    .loading__anima {
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      border: 5px solid #616161;
+      border-left-color: rgb(0, 106, 255);
+      border-top-color: rgb(0, 106, 255);
+      border-radius: 50%;
+      animation: rotate 1500ms infinite alternate-reverse;
+    }
+    @keyframes rotate {
+      to {
+        transform: rotate(1turn);
+      }
+    }
+  </style>
+  <body>
+    <section class="loading">
+      <h3>Please be patient, its loading!</h3>
+      <span class="loading__anima"> </span>
+    </section>
+  </body>
+</html>
